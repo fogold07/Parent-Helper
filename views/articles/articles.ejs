@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../layouts/head'); -%>
+
+    <body id="page-top">
+        <!-- Navigation-->
+        <%- include('../layouts/navbar'); -%>
+
+        <!-- Masthead-->
+        <header class="masthead bg-primary text-white text-center" style="background-image: url('assets/img/articles-bg.jpg')">
+            <div class="container d-flex align-items-center flex-column">
+                <!-- Masthead Heading-->
+                <h1 class="masthead-heading text-uppercase mb-0">Retrouvez tous vos articles</h1>
+            </div>
+        </header>
+
+        <!-- Article Section-->
+        <section class="page-section text-black mb-0" id="allArticles">
+            <div class="container">
+                <% for (let i=0; i < articleposts.length; i++) { %> 
+                    <div class="row text-start">
+                        <a href="/post/<%= articleposts[i]._id  %> ">
+                            <h2 class="page-section-heading text-center text-uppercase text-black"><%= articleposts[i].title %></h2>
+                            <h3 class="text-center">Catégorie : <%= articleposts[i].category %></h3>
+                            <span class="">
+                                <p class="lead text-center">rédigé par <%= articleposts[i].author %></p>
+                                <p class="lead text-center">publié : <%= articleposts[i].create_at.toDateString() %></p>
+                            </span>
+                        </a>
+                    
+                    </div>
+                <!-- Divider-->
+                    <hr class="my-4" />
+                <% } %> 
+
+                <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Anciens articles</button>
+            </div>
+        </section>
+
+        <!-- Footer-->
+        <%- include('../layouts/footer'); -%>
+        <%- include('../layouts/scripts'); -%>
+    </body>
+</html>
