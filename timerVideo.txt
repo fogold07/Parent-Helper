@@ -1,5 +1,5 @@
 ## Point vidéo - tutoriel
 https://www.youtube.com/watch?v=SUPDFHuvhRc&list=PLEiMYEzpB4QsZIxBeWo9T1fCnii0XHfHP&index=1&t=3422s
 
-04-11-2021 : 1h26min 
-TO DO : erreur suite à l'ajout de la bio code 'ERR_HTTP_HEADERS_SENT'
+07-11-2021 : 1h47min - Authentification 
+TO DO : JWT
