@@ -1,5 +1,0 @@
-## Point vidéo - tutoriel
-https://www.youtube.com/watch?v=SUPDFHuvhRc&list=PLEiMYEzpB4QsZIxBeWo9T1fCnii0XHfHP&index=1&t=3422s
-
-07-11-2021 : 1h47min - Authentification 
-TO DO : JWT
